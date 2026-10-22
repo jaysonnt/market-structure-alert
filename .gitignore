@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+market_structure_alerts.jsonl
+.env
+.venv/

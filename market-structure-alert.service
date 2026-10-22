@@ -1,0 +1,11 @@
+[Unit]
+Description=Paper-only 5m/15m market-structure scan
+Documentation=file:///home/poly/Desktop/clawd/prop_research/market_structure_alert.py
+
+[Service]
+Type=oneshot
+WorkingDirectory=/home/poly/Desktop/clawd/prop_research
+ExecStart=/home/poly/Desktop/options-bot/.venv/bin/python market_structure_alert.py
+StandardOutput=append:/tmp/market-structure-alert.log
+StandardError=append:/tmp/market-structure-alert.log
+TimeoutStartSec=300
